@@ -8,7 +8,7 @@ cursor = conn.cursor()
 #테이블 생성
 cursor.execute(
     """
-    CREATE TABLE TESTDB (
+    CREATE TABLE IF NOT EXISTS TESTDB (
         id INTEGER PRIMARY KEY,
         name TEXT,
         age INTEGER
